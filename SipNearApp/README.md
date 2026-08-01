@@ -1,68 +1,77 @@
-# SipNear (Native iOS)
+# SipNear
 
-Polished, Vivino-inspired wine discovery for iPhone — **no account**, **one easy button**, wineries around you.
+**Native SwiftUI iPhone app** — Vivino-inspired wine discovery with an Apple North Star bar: clarity, deference, depth, and a single unmistakable easy button.
 
-Open this project in **Xcode** to build & run on a simulator or device.
+> No account. One tap. Wineries around you.
 
-## Open in Xcode
-
-1. On a Mac, open:
+Open in Xcode:
 
 ```text
 SipNearApp/SipNear.xcodeproj
 ```
 
-2. Select an iPhone simulator (or your device)
-3. Set your **Signing Team** under:
-   `SipNear` target → **Signing & Capabilities**
-4. Press **Run** (⌘R)
+## Product principles (Apple HIG)
 
-**Requirements:** Xcode 15+, iOS 17+ deployment target
+- **Clarity** — one primary action: *Find Wineries Near Me*
+- **Deference** — content first; chrome stays quiet
+- **Depth** — continuous corners, materials, spring motion (honors Reduce Motion)
+- **Accessibility** — Dynamic Type–friendly type, VoiceOver labels, semantic contrast
+- **Privacy** — location only for nearby search; saves stay on-device; privacy manifest included
 
-## Easy-button flow
+## Run on your iMac
 
-1. Launch SipNear  
-2. Tap **Find Wineries Near Me**  
-3. Allow location once  
-4. Instantly see nearby wineries / tasting rooms / wine shops  
-5. Browse top-rated bottles — save favorites on-device, no signup
+1. Clone / pull this repo  
+2. Open `SipNearApp/SipNear.xcodeproj`  
+3. Select an **iPhone 16** (or any iOS 17+) simulator  
+4. Target → **Signing & Capabilities** → choose your Team  
+5. Press **Run** (⌘R)  
+6. In Simulator: **Features → Location → Custom Location** (or Apple)  
+7. Tap **Find Wineries Near Me**
 
-## What’s included
+### Tests
 
-| Area | Details |
-|---|---|
-| Nearby | Live OpenStreetMap Overpass lookup + MapKit map |
-| Fallback | Curated Napa / Sonoma estates if live data is sparse |
-| Discover | Red / white / rosé / sparkling / dessert filters |
-| Wine detail | Ratings, tasting notes, grapes, ABV, one-tap save |
-| Winery detail | Apple Maps directions, website, call |
-| Saved | Local `UserDefaults` favorites — no account |
-
-## Project structure
-
-```text
-SipNearApp/
-  SipNear.xcodeproj
-  SipNear/
-    SipNearApp.swift
-    Info.plist
-    Assets.xcassets
-    Theme/
-    Models/
-    Services/          # CoreLocation + Overpass
-    Views/
-      Components/      # EasyButton, cards, badges
-      Screens/         # Welcome, Home, Nearby, Discover, Details
+```bash
+xcodebuild test \
+  -project SipNearApp/SipNear.xcodeproj \
+  -scheme SipNear \
+  -destination 'platform=iOS Simulator,name=iPhone 16'
 ```
 
-## Privacy
+## Architecture
 
-- Location is used only to query nearby wine places
-- No accounts, passwords, or cloud profiles
-- Saved wines stay on the device
+```text
+SipNear/
+  App/                 # @main, RootView
+  Core/
+    DesignSystem/      # tokens, adaptive colors, motion
+    Models/            # Wine, Winery, catalogs
+    Services/          # @Observable AppModel, CoreLocation, Overpass
+    Utilities/         # Geo, haptics
+  Features/            # Welcome, Home, Nearby, Discover, Details, Saved
+  Shared/Components/   # EasyButton, cards, chips
+  Resources/           # Info.plist, Assets, PrivacyInfo
+SipNearTests/          # Geo + Overpass mapping tests
+```
 
-## Notes for first Xcode run
+Swift concurrency: `@MainActor` UI model, `Sendable` models, strict concurrency enabled.
 
-- If location is denied, SipNear falls back to a **Napa Valley demo area** so you can still explore the UI
-- App Transport Security allows the HTTPS Overpass endpoints used for winery search
-- Add a 1024×1024 App Icon in `Assets.xcassets/AppIcon` before App Store submission
+## Features
+
+| Surface | Behavior |
+|---|---|
+| Welcome | Hero easy button — no signup wall |
+| Nearby | MapKit map + live OpenStreetMap Overpass results |
+| Fallback | Curated Napa / Sonoma estates when live data is sparse |
+| Discover | Style filters, ratings, tasting notes |
+| Detail | Save locally, Directions via Apple Maps |
+| Saved | On-device favorites via `UserDefaults` |
+
+## Requirements
+
+- Xcode 15+ (Xcode 16 recommended)
+- iOS 17+ deployment target
+- Apple ID for simulator signing
+
+## When you’re back
+
+Allow Cursor / this agent access to your Mac’s Xcode simulator and we can iterate with live builds, Instruments, and accessibility audits against Apple’s North Star bar.
