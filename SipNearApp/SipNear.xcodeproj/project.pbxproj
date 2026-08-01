@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7497519EE649A08431753E /* SipNearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D145F5F919487C98229106 /* SipNearApp.swift */; };
+		33490E55CD574D05B5072396 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0BEB0903524C918579FF61 /* Colors.swift */; };
+		CC5E7252BB644B8DA3FC5ED9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B7E96E37DB41ADA1A91073 /* Models.swift */; };
+		352AC591E01F43D8BD14F29A /* WineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CE1E8ECD64F4F8157B5B5 /* WineData.swift */; };
+		83410EFB22C44ABF885B5F9D /* FallbackWineries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B8CFCDE5A49508633DEFC /* FallbackWineries.swift */; };
+		1E3575ECC7FD4BD8B302B23E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC1A275DA844A4B94543CF /* LocationService.swift */; };
+		69F195ABCC1B47B2A07FD9A6 /* WineryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC9EC024D6427AB2EB416D /* WineryService.swift */; };
+		11FDBFC40D234216AD390A2D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA68E923A9E41A19624072B /* AppModel.swift */; };
+		41373718F8004CFB8255778D /* EasyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628595D966B34128A1D52C24 /* EasyButton.swift */; };
+		1115AA586AF6420A9482A8C0 /* RatingBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B6F426886437BBEB52294 /* RatingBadge.swift */; };
+		807D25CCB112412499A25672 /* WineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1D0F9E664DF5A7A8F013 /* WineCard.swift */; };
+		AA075C43DCD946DCB34B21BB /* WineryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB90D35CD54DC6AD78EFB2 /* WineryCard.swift */; };
+		AB8A1A1706F344DF86869CF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52621B445084C6BBC7C1233 /* WelcomeView.swift */; };
+		14A4A26884894DE0B556F38E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B63124A784876B52272DF /* HomeView.swift */; };
+		8AAE855A2EA649DE8F61D7CD /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B95237193474081AD2119 /* NearbyView.swift */; };
+		B3C474F6F1A6457DB6A2457A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52201744CB834E00ACBDBF1F /* DiscoverView.swift */; };
+		BCF009B150F74F4DB65BB0FE /* WineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927E26910291489585713C6D /* WineDetailView.swift */; };
+		3A0F54C850A944BEB9367694 /* WineryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502BD6ACDFA848B488E40727 /* WineryDetailView.swift */; };
+		AC81F5C6CF1A4036AF8C4E30 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6807B0FE0A546F3ADFADBD2 /* SavedView.swift */; };
+		15F701F4BF584B88BC97F922 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BDDEEA16741E6AFF082EF /* RootView.swift */; };
+		721FA2F96EFA46EDBC26FC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328446224AC14C48BBA50B1F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5D145F5F919487C98229106 /* SipNearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipNearApp.swift; sourceTree = "<group>"; };
+		0F0429719416402AB89AAE99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A0BEB0903524C918579FF61 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E5B7E96E37DB41ADA1A91073 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AB8CE1E8ECD64F4F8157B5B5 /* WineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineData.swift; sourceTree = "<group>"; };
+		907B8CFCDE5A49508633DEFC /* FallbackWineries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackWineries.swift; sourceTree = "<group>"; };
+		4EFC1A275DA844A4B94543CF /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		69AC9EC024D6427AB2EB416D /* WineryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineryService.swift; sourceTree = "<group>"; };
+		3BA68E923A9E41A19624072B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		628595D966B34128A1D52C24 /* EasyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyButton.swift; sourceTree = "<group>"; };
+		5B6B6F426886437BBEB52294 /* RatingBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingBadge.swift; sourceTree = "<group>"; };
+		52FB1D0F9E664DF5A7A8F013 /* WineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCard.swift; sourceTree = "<group>"; };
+		ABCB90D35CD54DC6AD78EFB2 /* WineryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineryCard.swift; sourceTree = "<group>"; };
+		D52621B445084C6BBC7C1233 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E95B63124A784876B52272DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9D3B95237193474081AD2119 /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		52201744CB834E00ACBDBF1F /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		927E26910291489585713C6D /* WineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailView.swift; sourceTree = "<group>"; };
+		502BD6ACDFA848B488E40727 /* WineryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineryDetailView.swift; sourceTree = "<group>"; };
+		E6807B0FE0A546F3ADFADBD2 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		AF2BDDEEA16741E6AFF082EF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		328446224AC14C48BBA50B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F679C8CF0F9646EFAB2DA62E /* SipNear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SipNear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F91CD5600F8043E0BD976B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0906378A5CD0470F862A05E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F679C8CF0F9646EFAB2DA62E /* SipNear.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F135EF9A0EE4474EAC9B06F6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2A0BEB0903524C918579FF61 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E28BC43AAFDF4BAAB76D1F10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5B7E96E37DB41ADA1A91073 /* Models.swift */,
+				AB8CE1E8ECD64F4F8157B5B5 /* WineData.swift */,
+				907B8CFCDE5A49508633DEFC /* FallbackWineries.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E750A9853024D82A1EF4179 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4EFC1A275DA844A4B94543CF /* LocationService.swift */,
+				69AC9EC024D6427AB2EB416D /* WineryService.swift */,
+				3BA68E923A9E41A19624072B /* AppModel.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BD9EAADF267D40B9B6419D54 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				628595D966B34128A1D52C24 /* EasyButton.swift */,
+				5B6B6F426886437BBEB52294 /* RatingBadge.swift */,
+				52FB1D0F9E664DF5A7A8F013 /* WineCard.swift */,
+				ABCB90D35CD54DC6AD78EFB2 /* WineryCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B325E8A98FCE49FC8E589C8F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D52621B445084C6BBC7C1233 /* WelcomeView.swift */,
+				E95B63124A784876B52272DF /* HomeView.swift */,
+				9D3B95237193474081AD2119 /* NearbyView.swift */,
+				52201744CB834E00ACBDBF1F /* DiscoverView.swift */,
+				927E26910291489585713C6D /* WineDetailView.swift */,
+				502BD6ACDFA848B488E40727 /* WineryDetailView.swift */,
+				E6807B0FE0A546F3ADFADBD2 /* SavedView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B22B5D65BE3848EDBA90CAD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BDDEEA16741E6AFF082EF /* RootView.swift */,
+				BD9EAADF267D40B9B6419D54 /* Components */,
+				B325E8A98FCE49FC8E589C8F /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		824AD73168EF412DA6AEFB36 /* SipNear */ = {
+			isa = PBXGroup;
+			children = (
+				C5D145F5F919487C98229106 /* SipNearApp.swift */,
+				0F0429719416402AB89AAE99 /* Info.plist */,
+				328446224AC14C48BBA50B1F /* Assets.xcassets */,
+				F135EF9A0EE4474EAC9B06F6 /* Theme */,
+				E28BC43AAFDF4BAAB76D1F10 /* Models */,
+				8E750A9853024D82A1EF4179 /* Services */,
+				B22B5D65BE3848EDBA90CAD8 /* Views */,
+			);
+			path = SipNear;
+			sourceTree = "<group>";
+		};
+		57AE56C50DB04479922B2C12 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				824AD73168EF412DA6AEFB36 /* SipNear */,
+				0906378A5CD0470F862A05E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D6970E89A2443939A3F1965 /* SipNear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A2AC78A6D044D888D244B1 /* Build configuration list for PBXNativeTarget "SipNear" */;
+			buildPhases = (
+				32A402659D6E403BBF8DE596 /* Sources */,
+				F91CD5600F8043E0BD976B88 /* Frameworks */,
+				0078BBBB951042B3ACB00BF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SipNear;
+			productName = SipNear;
+			productReference = F679C8CF0F9646EFAB2DA62E /* SipNear.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16A4243E69A24FD29C49D0BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8D6970E89A2443939A3F1965 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F1E54E3CB47A4678992A71BF /* Build configuration list for PBXProject "SipNear" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57AE56C50DB04479922B2C12 /* Root */;
+			productRefGroup = 0906378A5CD0470F862A05E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D6970E89A2443939A3F1965 /* SipNear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0078BBBB951042B3ACB00BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721FA2F96EFA46EDBC26FC1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A402659D6E403BBF8DE596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7497519EE649A08431753E /* SipNearApp.swift in Sources */,
+				33490E55CD574D05B5072396 /* Colors.swift in Sources */,
+				CC5E7252BB644B8DA3FC5ED9 /* Models.swift in Sources */,
+				352AC591E01F43D8BD14F29A /* WineData.swift in Sources */,
+				83410EFB22C44ABF885B5F9D /* FallbackWineries.swift in Sources */,
+				1E3575ECC7FD4BD8B302B23E /* LocationService.swift in Sources */,
+				69F195ABCC1B47B2A07FD9A6 /* WineryService.swift in Sources */,
+				11FDBFC40D234216AD390A2D /* AppModel.swift in Sources */,
+				41373718F8004CFB8255778D /* EasyButton.swift in Sources */,
+				1115AA586AF6420A9482A8C0 /* RatingBadge.swift in Sources */,
+				807D25CCB112412499A25672 /* WineCard.swift in Sources */,
+				AA075C43DCD946DCB34B21BB /* WineryCard.swift in Sources */,
+				AB8A1A1706F344DF86869CF0 /* WelcomeView.swift in Sources */,
+				14A4A26884894DE0B556F38E /* HomeView.swift in Sources */,
+				8AAE855A2EA649DE8F61D7CD /* NearbyView.swift in Sources */,
+				B3C474F6F1A6457DB6A2457A /* DiscoverView.swift in Sources */,
+				BCF009B150F74F4DB65BB0FE /* WineDetailView.swift in Sources */,
+				3A0F54C850A944BEB9367694 /* WineryDetailView.swift in Sources */,
+				AC81F5C6CF1A4036AF8C4E30 /* SavedView.swift in Sources */,
+				15F701F4BF584B88BC97F922 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19CF4C4B731B4358A9E96FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		454DBA9414794FD6BEBD3BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B3FA9319D4433795ABEC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SipNear/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SipNear;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sipnear.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C8BFC746FFF44E9A2E1CD14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SipNear/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SipNear;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sipnear.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E54E3CB47A4678992A71BF /* Build configuration list for PBXProject "SipNear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CF4C4B731B4358A9E96FAB /* Debug */,
+				454DBA9414794FD6BEBD3BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A2AC78A6D044D888D244B1 /* Build configuration list for PBXNativeTarget "SipNear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B3FA9319D4433795ABEC1F /* Debug */,
+				7C8BFC746FFF44E9A2E1CD14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16A4243E69A24FD29C49D0BA /* Project object */;
+}
